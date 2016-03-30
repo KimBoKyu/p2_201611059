@@ -1,0 +1,9 @@
+start
+:set how many turns;\n:set how much to grow bigger;
+:set angle;
+:set start size;
+repeat
+:grow bigger;
+:draw;
+repeat while(turns)
+stop
