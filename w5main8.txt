@@ -1,0 +1,16 @@
+start
+:input height
+input weight;
+:BMI = weight * 10000 / (height * height);
+if (BMI<=18.5)
+:low weight;
+elseif(18.5<BMI<25)
+:nomal weight;
+elseif(25<=BMI<30)
+:overweight;
+elseif(30<=BMI<35)
+:little overweight;
+elseif(35<BMI)
+:super overweight;
+endif
+stop
