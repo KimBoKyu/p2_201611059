@@ -1,0 +1,71 @@
+﻿import turtle
+t1=turtle.Turtle()
+wn=turtle.Screen()
+t1.speed(4)
+t1.color("RED")
+t1.shape("turtle")
+def savetracks():
+    mytracks=list()
+    t1.penup()
+    t1.goto(-320,300)
+    mytracks.append(t1.pos())
+    t1.pendown()
+    t1.right(90)
+    t1.forward(600)
+    mytracks.append(t1.pos())
+    t1.left(90)
+    t1.forward(150)
+    mytracks.append(t1.pos())
+    t1.left(90)
+    t1.forward(500)
+    mytracks.append(t1.pos())
+    t1.right(90)
+    t1.forward(150)
+    mytracks.append(t1.pos())
+    t1.right(90)
+    t1.forward(150)
+    mytracks.append(t1.pos())
+    t1.left(90)
+    t1.forward(50)
+    mytracks.append(t1.pos())
+    t1.right(90)
+    t1.forward(100)
+    mytracks.append(t1.pos())
+    t1.right(90)
+    t1.forward(50)
+    mytracks.append(t1.pos())
+    t1.left(90)
+    t1.forward(200)
+    mytracks.append(t1.pos())
+    t1.left(90)
+    t1.forward(150)
+    mytracks.append(t1.pos())
+    t1.left(90)
+    t1.forward(350)
+    mytracks.append(t1.pos())
+    t1.right(90)
+    t1.forward(150)
+    mytracks.append(t1.pos())
+    t1.right(90)
+    t1.forward(300)
+    mytracks.append(t1.pos())
+    t1.left(90)
+    t1.forward(100)
+    mytracks.append(t1.pos())
+    return mytracks
+
+def replayTracks(mytracks):
+    for t in mytracks:
+        print t
+
+def lab7():
+    savetracks()
+    mytracks=savetracks()
+    replayTracks(mytracks)
+
+def main():
+    lab7()
+    raw_input()
+
+if __name__=="__main__":
+    main()
