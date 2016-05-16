@@ -1,4 +1,4 @@
-﻿import turtle
+import turtle
 wn=turtle.Screen()
 t1=turtle.Turtle()
 def draw():
@@ -10,13 +10,15 @@ def draw():
         t1.left(90)
     t1.penup()
     t1.home()
+def change():
+    if 100<=x<=200 and 100<=y<=200:
+        t1.color("red")
+        draw()
 draw()
 def keyup():
     t1.fd(50)
     (x,y)=t1.pos()
-    if 100<=x<=200 and 100<=y<=200:
-        t1.color("red")
-        draw()
+    change()
 def keydown():
     t1.back(50)
 def turnr():
@@ -26,9 +28,7 @@ def turnl():
 def mousegoto(x,y):
     t1.setpos(x,y)
     (x,y)=t1.pos()
-    if 100<=x<=200 and 100<=y<=200:
-        t1.color("red")
-        draw()
+    change()
 def addkeys():
     wn.onkey(keyup, "Up")
     wn.onkey(keydown, "Down")
