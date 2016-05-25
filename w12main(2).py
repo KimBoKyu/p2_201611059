@@ -1,5 +1,13 @@
 import time
 def homework():
+    filetwo=open('output.txt', 'w')
+    line1='first line\n'
+    filetwo.write(line1)
+    line2='second line\n'
+    filetwo.write(line2)
+    line3='third line'
+    filetwo.write(line3)
+    filetwo.close()
     msg='[KBK edited {0}]'.format(time.strftime('%Y.%m.%d , %H:%M:%S'))
     fin=open('output.txt', 'r')
     fout=open('outputUpper.txt','w')
