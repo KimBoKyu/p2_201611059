@@ -35,11 +35,11 @@ def drawSquareWithCoords(coords):
         x2=int(coord[1][0])
         y1=int(coord[0][1])
         y2=int(coord[1][1])
-    print x1,y1,x2,y2
-    t1.goto(x1,y1)
-    for i in range(0,4):
-        t1.fd(x1-x2)
-        t1.rt(90)
+        print x1,y1,x2,y2
+        t1.goto(x1,y1)
+        for i in range(0,4):
+            t1.fd(x1-x2)
+            t1.rt(90)
 drawSquareWithCoords(coords)
 wn.exitonclick()
 
