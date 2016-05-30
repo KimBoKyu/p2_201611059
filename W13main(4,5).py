@@ -1,7 +1,6 @@
 ﻿import turtle
 t1=turtle.Turtle()
 wn=turtle.Screen()
-
 def homework():
     file1=raw_input("Append file ex)python.txt: ")
     file2=raw_input("Read file ex)numeber.txt: ")
@@ -15,9 +14,7 @@ def homework():
     except Exception as e:
         print e
 homework()
-
 aFile=raw_input("Input filename ex)recoords.txt: ")
-
 def getCoordsFromFile(aFile):
     filehome=open(aFile)
     coords=list()
@@ -27,8 +24,6 @@ def getCoordsFromFile(aFile):
     filehome.close()
     return coords
 coords=getCoordsFromFile(aFile)
-
-
 def drawSquareWithCoords(coords):
     for coord in coords:
         x1=int(coord[0][0])
@@ -42,4 +37,3 @@ def drawSquareWithCoords(coords):
             t1.rt(90)
 drawSquareWithCoords(coords)
 wn.exitonclick()
-
