@@ -8,3 +8,4 @@ class Dog(object):
         print self.name, "talk", self.sound
 question=Dog(Dogname, Dogtalk)
 question.talkDog()
+raw_input()
